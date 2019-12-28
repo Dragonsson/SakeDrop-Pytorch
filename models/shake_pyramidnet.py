@@ -116,7 +116,7 @@ class Bottleneck(nn.Module):
         return out
 
 
-class PyramidNet(nn.Module):
+class PyramidNet_SakeDrop(nn.Module):
 
     def __init__(self, depth, alpha, num_classes, bottleneck=False):
         super(PyramidNet, self).__init__()
