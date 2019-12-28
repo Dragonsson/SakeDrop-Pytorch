@@ -1,1 +1,1 @@
-from models.shake_pyramidnet import PyramidNet
+from models.shake_pyramidnet import PyramidNet_ShakeDrop
