@@ -11,4 +11,4 @@ from model import PyramidNet_ShakeDrop
 net = PyramidNet_ShakeDrop(depth=101,alpha=270,num_classes=1000)
 ```
 # Tips
-If you feel it is useful for you,could you give a star?
+If you feel it is useful,could you give a star?
