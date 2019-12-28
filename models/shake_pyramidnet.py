@@ -50,7 +50,6 @@ class BasicBlock(nn.Module):
         residual_channel = out.size()[1]
         shortcut_channel = shortcut.size()[1]
 
-        # 使用零填充将shortcut与原x相加，如果两个不相等，相当于两个独立的residual网络*（一个为原x+shortcut，一个为0 + shortcut）
         if residual_channel != shortcut_channel:
             padding = torch.autograd.Variable(
                 torch.cuda.FloatTensor(batch_size, residual_channel - shortcut_channel, featuremap_size[0],
